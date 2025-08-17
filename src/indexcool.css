@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme {
+  /* --font-display: "Satoshi", "sans-serif";
+  --breakpoint-3xl: 1920px;
+  --color-avocado-100: oklch(0.99 0 0);
+  --color-avocado-200: oklch(0.98 0.04 113.22);
+  --color-avocado-300: oklch(0.94 0.11 115.03);
+  --color-avocado-400: oklch(0.92 0.19 114.08);
+  --color-avocado-500: oklch(0.84 0.18 117.33);
+  --color-avocado-600: oklch(0.53 0.12 118.34);
+  --ease-fluid: cubic-bezier(0.3, 0, 0, 1);
+  --ease-snappy: cubic-bezier(0.2, 0, 0, 1); */
+  /* ... */
+  --color-gray-900: #202225;
+  --color-gray-800: #2f3136;
+  --color-gray-700: #36393f;
+  --color-gray-600: #4f545c;
+  --color-gray-400: #d4d7dc;
+  --color-gray-300: #e3edef;
+  --color-gray-200: #ebedef;
+  --color-gray-100: #f2f3f5;
+}
+
+@layer components {
+    .sidebar-icon {
+        @apply relative flex items-center justify-center h-12 w-12 mt-2 mb-2 mx-auto bg-gray-800 text-green-500
+        hover:bg-green-600 hover:text-white rounded-3xl hover:rounded-xl transition-all duration-200 ease-linear;
+    }
+
+    .sidebar-tooltip {
+        @apply absolute w-auto p-2 m-2 min-w-max left-14 rounded-md shadow-md text-white bg-gray-900 text-xs font-bold transition-all duration-300 scale-0 origin-left;
+    }
+}

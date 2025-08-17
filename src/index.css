@@ -1,0 +1,133 @@
+@import "tailwindcss";
+
+* {
+  -webkit-user-select: none; /* For Safari */
+  -ms-user-select: none; /* For Internet Explorer and Edge */
+  user-select: none; /* Standard property for modern browsers */
+}
+
+@layer components {
+    .toggle-change {
+      @apply cursor-pointer
+    }
+}
+
+/* Project Card */
+.projects ul {
+  padding: 0;
+}
+
+.projects ul li {
+  list-style: none;
+  margin: 20px 0;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-slate-50);
+  /* border: 3px solid var(--color-slate-100); */
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: scale(103%);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.project-info {
+  margin-bottom: 10px;
+}
+
+.project-info a {
+  font-size: 125%;
+}
+
+.project-info a:hover {
+  font-size: 126%;
+}
+
+.thumbnail {
+  margin-top: 10px;
+}
+
+.clickable {
+  cursor: pointer;
+  color: var(--color-blue-600);
+  transition: all 200ms ease-in;
+}
+
+.clickable:hover {
+  font-size: 101%;
+  color: var(--color-amber-600);
+  transition: all 200ms ease-out;
+}
+
+.stags {
+  margin-top: 10px;
+}
+
+.stag {
+  display: inline-block;
+  background-color: var(--color-emerald-200);
+  color: var(--color-emerald-800);
+  font-size: 0.8em;
+  padding: 2px 8px;
+  border-radius: 5px;
+  margin-right: 5px;
+  transition: all 0.4s;
+}
+
+/* Modal */
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  padding: 1rem;
+}
+
+.modal-underlay {
+  position: absolute;
+  inset: 0;
+  background: var(--color-slate-50);
+  opacity: 0.8;
+  z-index: 99;
+  border: none;
+  width: 100%;
+  box-shadow: unset;
+}
+
+.modal-underlay:hover {
+  transform: translate(0);
+  box-shadow: unset;
+}
+
+.modal-content {
+  position: relative;
+  z-index: 101;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  max-height: 700px;
+  border-radius: 1rem;
+  /* border: 2px solid var(--color-amber-500); */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  background: white;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */
+  gap: 1rem;
+
+}

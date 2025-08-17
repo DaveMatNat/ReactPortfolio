@@ -1,8 +1,6 @@
 import { useState } from 'react'
 // import DiscordNav from './components/DiscordNav'
 import Header from './components/Header'
-import ClickChange from './components/ClickChange'
-import TimeFromBirthday from './components/TimeFromBirthday'
 import Body from './components/Body'
 import Hero from './components/Hero'
 import Story from './components/Story'

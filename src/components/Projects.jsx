@@ -48,8 +48,8 @@ function Projects() {
             owner: "DaveMatNat",
             repo: "blink-front-end",
             description:
-                "Course scheduling assistant that helps students at the University of Richmond generate optimized timetables. Built with React and Node.js, with features like prerequisite checks, conflict detection, and user-friendly visualization.",
-            tags: ["React", "Node.js", "Scheduling"],
+                "Course scheduling assistant that helps students at the University of Richmond generate course calendar and optimized timetables. Built with React and Next.js",
+            tags: ["React", "Next.js", "Scheduling"],
             image: "/projects_img/blink.jpeg"
         },
         {

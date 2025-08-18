@@ -95,7 +95,7 @@ function ProjectCard({ project }) {
                         </span>
                     ))}
                 </div>
-                <p className="line-clamp-3">{project.description}</p>
+                <p className="line-clamp-2">{project.description}</p>
             </div>
         </div>
     );

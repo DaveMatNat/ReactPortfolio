@@ -6,7 +6,7 @@ function Header() {
                 <div href="/">
                     <h1 className="text-xl sm:text-3xl md:text-4xl text-black">David Nathanson</h1>
                     <span className="subtitle">
-                        Open to startups, internships, and research
+                        Open to startups, SWE internships, and research
                     </span>
                 </div>
                 <button

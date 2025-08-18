@@ -92,7 +92,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  z-index: 100;
+  z-index: 1000;
   padding: 1rem;
 }
 
@@ -114,11 +114,11 @@
 
 .modal-content {
   position: relative;
-  z-index: 101;
+  z-index: 1001;
   max-width: 800px;
-  width: 100%;
+  width: 85dvw;
   margin: 0 auto;
-  max-height: 700px;
+  max-height: 80dvh;
   border-radius: 1rem;
   /* border: 2px solid var(--color-amber-500); */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);

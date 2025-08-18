@@ -49,7 +49,7 @@ function Projects() {
             repo: "blink-front-end",
             description:
                 "Course scheduling assistant that helps students at the University of Richmond generate optimized timetables. Built with React and Node.js, with features like prerequisite checks, conflict detection, and user-friendly visualization.",
-            tags: ["React", "Node.js", "Scheduling", "Education"],
+            tags: ["React", "Node.js", "Scheduling"],
             image: "/projects_img/blink.jpeg"
         },
         {
@@ -99,7 +99,7 @@ function Projects() {
             repo: "SierraAI",
             description:
                 "Discord bot for the University of Richmond freshman server — uses RAG with Gemini API and scraped campus data to answer student questions.",
-            tags: ["RAG", "Discord Bot", "Generative AI", "Web Scraping"],
+            tags: ["RAG", "Discord Bot", "Generative AI"],
             image: "/projects_img/spiderbot.gif"
         },
     ];

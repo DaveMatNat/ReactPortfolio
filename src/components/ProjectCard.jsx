@@ -56,7 +56,7 @@ function ProjectCard({ project }) {
                         <img
                             src={cachedImage}
                             alt={project.name + ' preview'}
-                            className="object-cover object-center w-auto max-h-[300px] lg:max-h-[400px] rounded-xl"
+                            className="object-cover object-center w-auto max-h-[300px] lg:max-h-[350px] rounded-xl"
                         />
                     </div>
                     {/* Modal Tags */}

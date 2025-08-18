@@ -44,10 +44,10 @@ function ProjectCard({ project }) {
             {pop && (
                 <Modal handleCloseModal={() => setPop(false)}>
                     {/* Modal Name */}
-                    <div className='pt-[1rem] pl-[1rem]'>
+                    <div className='pt-[1rem] lg:pl-[1rem]'>
                         {/* <h6 className='text-xl'>Name</h6> */}
                         <a href={project.link} target='_blank'>
-                            <span className="text-4xl text-slate-500 hover:text-black transition-all duration-300 ease-in-out after:content-['_↗']">{project.name}</span>
+                            <span className="text-2xl lg:text-4xl text-slate-500 hover:text-black transition-all duration-300 ease-in-out after:content-['_↗']">{project.name}</span>
                         </a>
                     </div>
 

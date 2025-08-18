@@ -53,7 +53,7 @@ function Projects() {
             image: "/projects_img/blink.jpeg"
         },
         {
-            name: "YOLO Brain Tumor Detection",
+            name: "Brain Tumor Detection",
             link: "https://github.com/DaveMatNat/yolo-brain-tumor",
             owner: "DaveMatNat",
             repo: "yolo-brain-tumor",

@@ -30,6 +30,9 @@ function ProjectCard({ project }) {
         return cache.find(item => item.repo === repoName) || null;
     };
 
+    // Get cached image if available
+    const cachedImage = loadFromCache(project.repo)?.image || project.image;
+
     useEffect(() => {
         // Save current project to cache when component mounts
         saveToCache(project);
@@ -49,11 +52,11 @@ function ProjectCard({ project }) {
                     </div>
 
                     {/* Modal Image */}
-                    <div className="w-auto max-w-xl h-full mx-auto my-4 rounded-xl overflow-hidden shadow-md shadow-slate-500 bg-gray-100 flex items-center justify-center">
+                    <div className="w-auto max-w-xl h-full mx-auto my-4 rounded-xl shadow-md shadow-slate-500 bg-gray-100 flex items-center justify-center">
                         <img
-                            src={project.image}
+                            src={cachedImage}
                             alt={project.name + ' preview'}
-                            className="object-cover object-center h-full w-auto max-w-full"
+                            className="object-cover object-center w-auto max-h-[300px] lg:max-h-[400px] rounded-xl"
                         />
                     </div>
                     {/* Modal Tags */}
@@ -77,7 +80,7 @@ function ProjectCard({ project }) {
                 <div>
                     <div className="aspect-[4/3] w-full max-w-xs mx-auto bg-transparent rounded-2xl overflow-hidden flex justify-center items-center">
                         <img
-                            src={project.image}
+                            src={cachedImage}
                             alt={`${project.name} Thumbnail`}
                             className="object-cover object-center w-full h-full rounded-2xl aspect-[4/3]"
                         />

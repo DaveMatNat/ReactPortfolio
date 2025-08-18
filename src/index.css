@@ -118,7 +118,7 @@
   max-width: 800px;
   width: 85dvw;
   margin: 0 auto;
-  max-height: 80dvh;
+  max-height: 85dvh;
   border-radius: 1rem;
   /* border: 2px solid var(--color-amber-500); */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);

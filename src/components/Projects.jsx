@@ -104,26 +104,28 @@ function Projects() {
         },
     ];
     return (
-        <section id="projects" className="flex flex-col gap-8 px-8 py-16 sm:py-20 md:py-24 max-w-[1200px] w-full mx-auto">
-            <p className="tag good max-w-fit px-4 py-2 rounded-full mx-auto text-center">
-                Stories of Success
-            </p>
-            <div className="flex flex-col gap-2">
-                <h3 className="text-5xl sm:text-6xl md:text-7xl mx-auto text-center">Projects</h3>
-                <p className="py-2 mx-auto text-center text-slate-500">More archives can be found on my
-                    <a href="https://github.com/DaveMatNat" target="_blank" className="clickable"> GitHub
-                    </a>
+        <div className='bg-slate-950'>
+            <section id="projects" className="flex flex-col gap-8 px-8 py-16 sm:py-20 md:py-24 max-w-[1200px] w-full mx-auto">
+                <p className="tag good max-w-fit px-4 py-2 rounded-full mx-auto text-center">
+                    Featured
                 </p>
+                <div className="flex flex-col gap-2">
+                    <h3 className="text-white text-5xl sm:text-6xl md:text-7xl mx-auto text-center">Projects</h3>
+                    <p className="py-2 mx-auto text-center text-slate-400">More archives can be found on my
+                        <a href="https://github.com/DaveMatNat" target="_blank" className="clickable"> GitHub
+                        </a>
+                    </p>
 
-            </div>
-            <section className="grid gap-[1rem] grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-                {projects.map((project, projectIndex) => {
-                    return (
-                        <ProjectCard key={projectIndex} project={project} />
-                    )
-                })}
+                </div>
+                <section className="grid gap-[1rem] grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+                    {projects.map((project, projectIndex) => {
+                        return (
+                            <ProjectCard key={projectIndex} project={project} />
+                        )
+                    })}
+                </section>
             </section>
-        </section>
+        </div>
     )
 }
 

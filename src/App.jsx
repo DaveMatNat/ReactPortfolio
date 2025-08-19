@@ -6,6 +6,8 @@ import Hero from './components/Hero'
 import Story from './components/Story'
 import Projects from './components/Projects'
 import Footer from './components/Footer'
+import WorkExperience from './components/WorkExperience'
+import Hire from './components/Hire'
 
 function App() {
   // Data & Info
@@ -16,7 +18,9 @@ function App() {
       <Body>
         <Hero />
         <Story />
+        <WorkExperience />
         <Projects />
+        <Hire />
       </Body>
       <Footer />
     </div>

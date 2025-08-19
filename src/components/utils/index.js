@@ -37,5 +37,5 @@ export function timeElasped(currentDate) {
         adjustedMonths += 12;
     }
 
-    return `${years} years ${adjustedMonths} months ${adjustedDays} days ${adjustedHours} hrs ${adjustedMinutes} minutes ${adjustedSeconds} seconds`;
+    return `${years} years ${adjustedMonths} months ${adjustedDays} days ${adjustedHours} hrs ${adjustedMinutes} mins ${adjustedSeconds} seconds`;
 }

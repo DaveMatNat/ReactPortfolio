@@ -10,10 +10,17 @@ function Header() {
                     </span>
                 </div>
                 <button
-                    className="card-button-secondary px-4 py-2 rounded-full whitespace-nowrap opacity-0 pointer-events-none">{hire}</button>
-                <div className="fixed top-8 right-8 z-999">
-                    <button className="card-button-secondary px-4 py-2 rounded-full whitespace-nowrap">{hire}</button>
-                </div>
+                    className="card-button-secondary px-4 py-2 rounded-2xl whitespace-nowrap opacity-0 pointer-events-none text-sm lg:text-xl">
+                    {hire}
+                </button>
+                {/* Actual Visible Button */}
+                <a href="#hire">
+                    <div className="fixed top-8 right-8 z-999">
+                        <button className="card-button-secondary px-4 py-2 rounded-2xl whitespace-nowrap text-sm lg:text-xl">
+                            {hire}
+                        </button>
+                    </div>
+                </a>
             </header>
         </>
     )

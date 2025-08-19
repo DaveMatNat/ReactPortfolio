@@ -7,7 +7,7 @@ function Story() {
             <div className='max-w-[1000px] mx-auto flex flex-col gap-[1.5rem]'>
                 <p className="tag rank rounded-full px-4 py-2 text-center mx-auto">from Teak to Tech</p>
 
-                <h2 className="text-3xl sm:text-4xl font-semibold py-4 animate-bounce">My Story</h2>
+                <h2 className="text-4xl sm:text-6xl py-4 mx-auto">My Background</h2>
 
                 <p className="mb-5 text-base sm:text-xl">
                     I was born on the tropical island of Phuket, Thailand. My journey took a wild turn early on, 

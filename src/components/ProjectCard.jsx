@@ -31,7 +31,7 @@ function ProjectCard({ project }) {
     };
 
     // Get cached image if available
-    const cachedImage = loadFromCache(project.repo)?.image || project.image;
+    // const cachedImage = loadFromCache(project.repo)?.image || project.image;
 
     useEffect(() => {
         // Save current project to cache when component mounts
@@ -39,7 +39,7 @@ function ProjectCard({ project }) {
     }, [project]);
 
     return (
-        <div className="project-card bg-gradient-to-br from-slate-100 to-white">
+        <div className="text-white project-card bg-gradient-to-br from-slate-700 to-slate-900">
             {/* Modal */}
             {pop && (
                 <Modal handleCloseModal={() => setPop(false)}>
@@ -47,16 +47,16 @@ function ProjectCard({ project }) {
                     <div className='pt-[1rem] lg:pl-[1rem]'>
                         {/* <h6 className='text-xl'>Name</h6> */}
                         <a href={project.link} target='_blank'>
-                            <span className="text-2xl lg:text-4xl text-slate-500 hover:text-black transition-all duration-300 ease-in-out after:content-['_↗']">{project.name}</span>
+                            <span className="text-2xl lg:text-4xl text-slate-400 hover:text-white transition-all duration-300 ease-in-out after:content-['_↗']">{project.name}</span>
                         </a>
                     </div>
 
                     {/* Modal Image */}
-                    <div className="w-auto max-w-xl h-full mx-auto my-4 rounded-xl shadow-md shadow-slate-500 bg-gray-100 flex items-center justify-center">
+                    <div className="w-auto max-w-xl h-full mx-auto my-4 flex items-center justify-center">
                         <img
-                            src={cachedImage}
+                            src={loadFromCache(project.repo)?.image || project.image}
                             alt={project.name + ' preview'}
-                            className="object-cover object-center w-auto max-h-[300px] lg:max-h-[350px] rounded-xl"
+                            className="object-cover object-center w-auto max-h-[300px] lg:max-h-[350px] rounded-[20px] border-3 border-slate-600"
                         />
                     </div>
                     {/* Modal Tags */}
@@ -70,19 +70,19 @@ function ProjectCard({ project }) {
                     {/* Modal Description */}
                     <div>
                         {/* <h6>Description</h6> */}
-                        <p className='text-lg'>{project.description}</p>
+                        <p className='text-lg text-white'>{project.description}</p>
                     </div>
                 </Modal>
             )}
             {/* ProjectCard */}
-            <div className="project-info" onClick={() => setPop(true)} style={{ cursor: 'pointer' }}>
-                {/* <!-- GitHub Thumbnail --> */}
+            <div className="my-[20px] sm:my-[10px]" onClick={() => setPop(true)} style={{ cursor: 'pointer' }}>
+                {/* <!-- Project Thumbnail --> */}
                 <div>
-                    <div className="aspect-[4/3] w-full max-w-xs mx-auto bg-transparent rounded-2xl overflow-hidden flex justify-center items-center">
+                    <div className="aspect-[4/3] w-full max-w-xs mx-auto bg-transparent overflow-hidden flex justify-center items-center">
                         <img
-                            src={cachedImage}
+                            src={loadFromCache(project.repo)?.image || project.image}
                             alt={`${project.name} Thumbnail`}
-                            className="object-cover object-center w-full h-full rounded-2xl aspect-[4/3]"
+                            className="object-cover object-center w-full h-full rounded-[20px] aspect-[4/3]"
                         />
                     </div>
                 </div>

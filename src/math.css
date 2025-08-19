@@ -126,7 +126,7 @@ body {
 .tag.good {
     background-color: rgba(94, 233, 181, 0.1);
     /* #5ee9b5 */
-    color: #007349;
+    color: var(--color-green-400);
     border: 1px solid rgba(94, 233, 181, 0.2);
 }
 

@@ -52,12 +52,16 @@ function ProjectCard({ project }) {
                     </div>
 
                     {/* Modal Image */}
-                    <div className="w-auto max-w-xl h-full mx-auto my-4 flex items-center justify-center">
-                        <img
-                            src={loadFromCache(project.repo)?.image || project.image}
-                            alt={project.name + ' preview'}
-                            className="object-cover object-center w-auto max-h-[300px] lg:max-h-[350px] rounded-[20px] border-3 border-slate-600"
-                        />
+                    <div className="w-auto max-w-xl h-full mx-auto my-4 flex items-center justify-center hover:opacity-65 transition-all duration-400 ease-in-out">
+                        <a
+                            href= {project.app}
+                            target='_blank'>
+                            <img
+                                src={loadFromCache(project.repo)?.image || project.image}
+                                alt={project.name + ' preview'}
+                                className="object-cover object-center w-auto max-h-[300px] lg:max-h-[350px] rounded-[20px] border-3 border-slate-600"
+                            />
+                        </a>
                     </div>
                     {/* Modal Tags */}
                     <div className="stags text-xl">
@@ -79,10 +83,11 @@ function ProjectCard({ project }) {
                 {/* <!-- Project Thumbnail --> */}
                 <div>
                     <div className="aspect-[4/3] w-full max-w-xs mx-auto bg-transparent overflow-hidden flex justify-center items-center">
+
                         <img
                             src={loadFromCache(project.repo)?.image || project.image}
                             alt={`${project.name} Thumbnail`}
-                            className="object-cover object-center w-full h-full rounded-[20px] aspect-[4/3]"
+                            className="object-cover object-center w-full h-full rounded-[20px] aspect-[4/3] cursor-pointer"
                         />
                     </div>
                 </div>

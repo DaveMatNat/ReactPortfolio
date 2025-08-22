@@ -5,6 +5,7 @@ function Projects() {
         {
             name: "Todo App",
             link: "https://github.com/DaveMatNat/TodoApp",
+            app: "https://job2do.netlify.app/",
             owner: "DaveMatNat",
             repo: "TodoApp",
             description:
@@ -15,6 +16,7 @@ function Projects() {
         {
             name: "Pokédex",
             link: "https://github.com/DaveMatNat/pokedex",
+            app: "https://pokekop.netlify.app/",
             owner: "DaveMatNat",
             repo: "pokedex",
             description:
@@ -25,6 +27,7 @@ function Projects() {
         {
             name: "Outfit Design Generator",
             link: "https://github.com/DaveMatNat/outfit-design",
+            app: "https://uroutfit.netlify.app/",
             owner: "DaveMatNat",
             repo: "outfit-design",
             description:
@@ -45,6 +48,7 @@ function Projects() {
         {
             name: "Blink",
             link: "https://github.com/DaveMatNat/blink-front-end",
+            app: "https://blink-front-end.vercel.app/",
             owner: "DaveMatNat",
             repo: "blink-front-end",
             description:
@@ -55,6 +59,7 @@ function Projects() {
         {
             name: "Brain Tumor Detection",
             link: "https://github.com/DaveMatNat/yolo-brain-tumor",
+            app: "",
             owner: "DaveMatNat",
             repo: "yolo-brain-tumor",
             description:
@@ -65,6 +70,7 @@ function Projects() {
         {
             name: "COVID-19 Detection using CNN",
             link: "https://github.com/DaveMatNat/Covid-19-CNN",
+            app: "",
             owner: "DaveMatNat",
             repo: "Covid-19-CNN",
             description:
@@ -85,6 +91,7 @@ function Projects() {
         {
             name: "UnWasteIt",
             link: "https://github.com/DaveMatNat/UnWasteIt",
+            app: "",
             owner: "DaveMatNat",
             repo: "UnWasteIt",
             description:
@@ -95,6 +102,7 @@ function Projects() {
         {
             name: "SpiderBot",
             link: "https://github.com/dgaray01/SierraAI",
+            app: "",
             owner: "dgaray01",
             repo: "SierraAI",
             description:

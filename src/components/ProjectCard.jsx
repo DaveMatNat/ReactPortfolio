@@ -52,7 +52,7 @@ function ProjectCard({ project }) {
                     </div>
 
                     {/* Modal Image */}
-                    <div className="w-auto max-w-xl h-full mx-auto my-4 flex items-center justify-center hover:opacity-65 transition-all duration-400 ease-in-out">
+                    <div className="w-auto max-w-xl h-full mx-auto my-4 flex items-center justify-center hover:opacity-65 transition-all duration-300 ease-in-out">
                         <a
                             href= {project.app}
                             target='_blank'>

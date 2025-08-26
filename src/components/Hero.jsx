@@ -1,7 +1,7 @@
 import ClickChange from "./ClickChange";
 import TimeFromBirthday from "./TimeFromBirthday";
 
-function Hero() {
+function Hero({CONTACTS}) {
     const otherThings = [
         "Lifting Weights 🏋",
         "Trying out different Outfits 👕",
@@ -67,7 +67,7 @@ function Hero() {
             </div>
 
             <p className="text-slate-400 text-xl">
-                Having lived <TimeFromBirthday /> in the lushes mountains of Chiang Mai,
+                Having lived <TimeFromBirthday /> in the mountains of Chiang Mai,
                 Thailand <a href="https://en.wikipedia.org/wiki/Thailand" target="_blank" rel="noreferrer"></a>{" "}
                 🐘 , I am now a sophmore student at the{" "}
                 <a
@@ -98,7 +98,7 @@ function Hero() {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8 w-fit mx-auto my-4">
-                <a href="/resume/David-Nathanson-Resume.pdf" target="_blank" rel="noreferrer">
+                <a href={CONTACTS.resume} target="_blank" rel="noreferrer">
                     <button className="card-button-secondary px-5 py-2 rounded-full text-lg sm:text-lg md:text-2xl flex items-center justify-center">
                         View Résumé
                     </button>

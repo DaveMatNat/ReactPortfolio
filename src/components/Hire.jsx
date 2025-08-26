@@ -1,16 +1,8 @@
 import { useState } from "react";
 import ContactCard from "./ContactCard";
 
-const CONTACTS = {
-  email: "davematnat@gmail.com", // ← CHANGE ME
-  linkedin: "https://www.linkedin.com/in/david-m-nathanson", // ← CHANGE ME
-  github: "https://github.com/DaveMatNat",
-  resume: "/resume/David-Nathanson-Resume.pdf",
-  calendly: "https://calendly.com/davematnat/", // ← OPTIONAL
-};
 
-
-function Hire() {
+function Hire({CONTACTS}) {
   const [name, setName] = useState("");
   const [fromEmail, setFromEmail] = useState("");
   const [message, setMessage] = useState("");

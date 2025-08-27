@@ -16,7 +16,7 @@ function Story() {
                 </p>
 
                 <p className="mb-5 text-base sm:text-xl">
-                    My dad was born in Brooklyn, NY, and my mom was born in Pattalung, Thailand. With an American dad and Thai mom, both English and Thai were spoken at home, making me a personal translator for my family. I helped my father, who doesn't speak Thai, navigate the social world in Chiang Mai, which taught me both how to bridge gaps between people and the importance of communication. These lessons have stuck with me, and I continue to use them in my everyday life.
+                    My dad was born in Brooklyn, NY, and my mom was born in Phatthalung, Thailand. With an American dad and Thai mom, both English and Thai were spoken at home, making me a personal translator for my family. I helped my father, who doesn't speak Thai, navigate the social world in Chiang Mai, which taught me both how to bridge gaps between people and the importance of communication. These lessons have stuck with me, and I continue to use them in my everyday life.
                       
                 </p>
 

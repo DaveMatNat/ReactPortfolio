@@ -59,7 +59,7 @@ function ProjectCard({ project }) {
                             <img
                                 src={loadFromCache(project.repo)?.image || project.image}
                                 alt={project.name + ' preview'}
-                                className="object-cover object-center w-auto max-h-[300px] lg:max-h-[350px] rounded-[20px] border-3 border-slate-600"
+                                className="object-cover object-center w-auto max-h-[300px] lg:max-h-[350px] rounded-[12px] border-3 border-slate-600"
                             />
                         </a>
                     </div>
@@ -87,7 +87,7 @@ function ProjectCard({ project }) {
                         <img
                             src={loadFromCache(project.repo)?.image || project.image}
                             alt={`${project.name} Thumbnail`}
-                            className="object-cover object-center w-full h-full rounded-[20px] aspect-[4/3] cursor-pointer"
+                            className="object-cover object-center w-full h-full rounded-[12px] aspect-[4/3] cursor-pointer"
                         />
                     </div>
                 </div>

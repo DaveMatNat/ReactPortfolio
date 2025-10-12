@@ -1,11 +1,17 @@
+import ExperienceCard from "./ExperienceCard";
+
 function WorkExperience() {
     const experiences = [
         {
             title: "Incoming Data Structures Teaching Assistant (Fall 2025)",
             company: "University of Richmond",
             location: "Richmond, VA",
-            date: "Fall 2025",
+            date: "Aug 2025 – Present",
             bullets: [
+                "Assisted in grading homework and project assignments for Grade 10 students in the Data Structures class. ",
+                "Provided constructive feedback and insightful critiques to enhance student understanding and performance.",
+                "Collaborated closely with Dr. Yucong Jiang to prepare students for more advanced courses like Algorithms",
+                "Developed strong communication and analytical skills through regular interactions with students and faculty."
             ],
         },
         {
@@ -14,8 +20,8 @@ function WorkExperience() {
             location: "Richmond, VA",
             date: "Aug 2025 – Present",
             bullets: [
-                "Solved 100+ IT support cases daily, solving software, hardware, and account-related issues for students, faculty, and staff.",
-                "Troubleshot and resolved WiFi connectivity problems across campus devices.",
+                "Resolved over 300+ technical support requests weekly, minimizing downtime for students, staff, and faculty.",
+                "Provided user-focused support, simplifying complex technical issues for non-technical users.",
                 "Diagnosed and repaired computer hardware issues, including desktops, laptops, and peripheral devices.",
                 "Delivered clear and patient technical support to a diverse user base, ensuring quick resolution and minimal downtime.",
             ],
@@ -26,11 +32,11 @@ function WorkExperience() {
             location: "Richmond, VA",
             date: "Aug 2025",
             bullets: [
-                "Led orientation efforts for 152+ incoming international students, providing assertive yet empathetic guidance through cultural, academic, and logistical transitions.",
-                "Facilitated interactive sessions on visa regulations, campus resources, academic expectations, and cultural adjustment with clarity and confidence.",
-                "Served as a trusted mentor and consistent point of contact, supporting students with patience and care while connecting them to campus services when needed.",
-                "Independently guided a cohort of 40 first-year students during Main Orientation, ensuring each student felt welcomed, supported, and empowered to thrive.",
-                "Planned and led community-building activities that fostered belonging, while demonstrating empathy, adaptability, and strong cross-cultural communication skills.",
+                "Guided 150+ international students through cultural, academic, and transitions with confident, empathetic leadership.",
+                "Directed a cohort of 40 first-years during Main Orientation, ensuring every student felt welcomed and supported.",
+                "Designed and led community-building events that fostered belonging and cross-cultural connection.",
+                "Mentored students with patience and consistency, connecting them to key campus resources.",
+                "Led sessions on visas, campus life, and cultural adjustment with clarity and authority.",
             ],
         },
         {
@@ -74,23 +80,11 @@ function WorkExperience() {
                 <p className="text-slate-500 mb-8 mx-auto text-lg text-center">
                     Proven experiences. Real results!
                 </p>
-
-                {experiences.map((exp, index) => (
-                    <div key={index} className="flex flex-col gap-2">
-                        <div className="flex flex-wrap items-baseline gap-x-3">
-                            <h3 className="text-2xl font-semibold">{exp.title}</h3>
-                            <span className="text-gray-700">{exp.company}</span>
-                        </div>
-                        <p className="italic text-gray-600">
-                            {exp.location} • {exp.date}
-                        </p>
-                        <ul className="list-disc ml-2 text-base sm:text-lg leading-relaxed ">
-                            {exp.bullets.map((bullet, i) => (
-                                <li key={i}>{bullet}</li>
-                            ))}
-                        </ul>
-                    </div>
+                <div className="flex flex-col gap-5">
+                {experiences.map((experience, index) => (
+                    <ExperienceCard key={index} experience={experience} />
                 ))}
+                </div>
             </div>
         </section>
     );

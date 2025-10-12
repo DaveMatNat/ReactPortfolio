@@ -1,5 +1,5 @@
 function Header() {
-    const hire = '🤙 Hire Me';
+    const hire = '🤙 Hire Me!';
     return (
         <>
             <header className="flex justify-between p-8 max-w-[1000px] mx-auto w-full">
@@ -16,7 +16,7 @@ function Header() {
                 {/* Actual Visible Button */}
                 <a href="#hire">
                     <div className="fixed top-8 right-8 z-999">
-                        <button className="card-button-secondary px-4 py-2 rounded-2xl whitespace-nowrap text-sm lg:text-xl">
+                        <button className="card-button-secondary px-6 py-3 rounded-xl whitespace-nowrap text-sm lg:text-xl">
                             {hire}
                         </button>
                     </div>

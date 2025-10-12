@@ -3,6 +3,17 @@ import ProjectCard from './ProjectCard'
 function Projects() {
     const projects = [
         {
+            name: "WhatsCrackin!",
+            link: "https://github.com/DaveMatNat/startup",
+            app: "https://whatscrackin.net/",
+            owner: "DaveMatNat",
+            repo: "startup",
+            description:
+                "Find activities around your area!",
+            tags: ["Full Stack","Start Up", "W.I.P"],
+            image: "/projects_img/whatscrackin.gif"
+        },
+        {
             name: "Todo App",
             link: "https://github.com/DaveMatNat/TodoApp",
             app: "https://job2do.netlify.app/",
@@ -38,6 +49,7 @@ function Projects() {
         // {
         //     name: "ROS2 Ping Pong Robot",
         //     link: "https://github.com/DaveMatNat/ros2-pingpong",
+        //     app: "https://job2do.netlify.app/",
         //     owner: "DaveMatNat",
         //     repo: "ros2-pingpong",
         //     description:

@@ -1,9 +1,19 @@
-function ExperienceCard({ experience, index}) {
+function ExperienceCard({ experience, index }) {
 
     return (
-        <div key={index} className="flex flex-col gap-2 rounded-xl p-[1rem] border-[1px] border-slate-400 experience-card">
-            <div className="flex flex-wrap items-baseline gap-x-3">
-                <h3 className="text-2xl font-semibold">{experience.title}</h3>
+        <div key={index} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm flex flex-col gap-[0.3rem]">
+            <div className="flex flex-wrap items-end-safe gap-x-3">
+                <div className="flex flex-wrap items-center gap-x-3">
+                    {experience.icons && experience.icons.map((icon, iconIndex) => (
+                        <img
+                            key={iconIndex}
+                            src={icon}
+                            alt={`${experience.company} icon`}
+                            className="w-5 h-5"
+                        />
+                    ))}
+                    <h3 className="text-2xl font-semibold">{experience.title}</h3>
+                </div>
                 <span className="text-gray-700">{experience.company}</span>
             </div>
             <p className="italic text-gray-600">

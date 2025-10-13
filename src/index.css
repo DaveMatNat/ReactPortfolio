@@ -46,10 +46,10 @@ html {
   display: flex;
   flex-direction: column;
   /* background-color: var(--color-slate-50); */
-  border: 2px solid var(--color-slate-600);
+  /* border: 2px solid var(--color-slate-600); */
   border-radius: 24px;
   padding: 20px;
-  /* box-shadow: 0 1px 2px var(--color-slate-400); */
+  box-shadow: 0px 0px 5px 1px var(--color-slate-900);
   transition: all 0.3s, box-shadow 0.2s ease;
 }
 

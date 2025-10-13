@@ -3,7 +3,7 @@ import ExperienceCard from "./ExperienceCard";
 function WorkExperience() {
     const experiences = [
         {
-            title: "Incoming Data Structures Teaching Assistant (Fall 2025)",
+            title: "Data Structures Teaching Assistant (Fall 2025)",
             company: "University of Richmond",
             location: "Richmond, VA",
             date: "Aug 2025 – Present",
@@ -13,6 +13,7 @@ function WorkExperience() {
                 "Collaborated closely with Dr. Yucong Jiang to prepare students for more advanced courses like Algorithms",
                 "Developed strong communication and analytical skills through regular interactions with students and faculty."
             ],
+            icons: ["/icons/richmond.svg"]
         },
         {
             title: "IT Helpdesk Technician",
@@ -25,6 +26,7 @@ function WorkExperience() {
                 "Diagnosed and repaired computer hardware issues, including desktops, laptops, and peripheral devices.",
                 "Delivered clear and patient technical support to a diverse user base, ensuring quick resolution and minimal downtime.",
             ],
+            icons: ["/icons/richmond.svg"]
         },
         {
             title: "University Orientation Advisor",
@@ -38,6 +40,7 @@ function WorkExperience() {
                 "Mentored students with patience and consistency, connecting them to key campus resources.",
                 "Led sessions on visas, campus life, and cultural adjustment with clarity and authority.",
             ],
+            icons: ["/icons/richmond.svg"]
         },
         {
             title: "Research Engineer & Assistant",
@@ -52,6 +55,7 @@ function WorkExperience() {
                 "Implemented ROS2-based motion planning and service-based control for autonomous mobile robots.",
                 "Optimized LiDAR and odometry pipelines to reduce robot collision rates by 30%.",
             ],
+            icons: ["/icons/cobotiq.svg"]
         },
         {
             title: "Technical Lead",
@@ -62,6 +66,7 @@ function WorkExperience() {
                 "Led a team of 4 in organizing STEM and Social Studies events for 200+ students.",
                 "Produced event media using Notion and Google Workspace, achieving 2,000+ online views.",
             ],
+            icons: []
         },
     ];
 

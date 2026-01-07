@@ -4,7 +4,7 @@ function Story() {
             className="bg-slate-950 text-white px-8 py-16 sm:py-20 md:py-24 max-h-fit"
         >
             <div className='max-w-[1000px] mx-auto flex flex-col gap-[1.25rem]'>
-                <h2 className="text-4xl sm:text-6xl py-5 mx-auto text-center mb-5">My lore!</h2>
+                <h2 className="text-4xl sm:text-6xl py-5 mx-auto">My lore!</h2>
                 <p className="tag rank rounded-full px-4 py-2 text-center mx-auto">from Teak to Tech</p>
                 <p className="mb-5 text-base sm:text-xl">
                     I was born on the island of Phuket, Thailand. When I was young, my family

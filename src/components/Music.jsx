@@ -1,9 +1,11 @@
 import { useRef, useEffect, useState } from 'react';
 import MusicCard from './MusicCard';
+import { getUserPlaylists } from '../utils/spotify';
 
 function Music() {
     const scrollRef = useRef(null);
     const [isHovered, setIsHovered] = useState(false);
+    const [fetchedPlaylists, setFetchedPlaylists] = useState([]);
 
     // Helper to get ID from various input formats
     const getPlaylistID = (url) => {
@@ -52,14 +54,31 @@ function Music() {
         }
     ];
 
+    // Replace 'davematnat' with your actual Spotify User ID if you want to fetch dynamically
+    // You also need to set up VITE_SPOTIFY_CLIENT_ID and VITE_SPOTIFY_CLIENT_SECRET in .env
+    const SPOTIFY_USER_ID = "davematnat"; 
+
+    useEffect(() => {
+        const loadPlaylists = async () => {
+            const apiPlaylists = await getUserPlaylists(SPOTIFY_USER_ID);
+            if (apiPlaylists.length > 0) {
+                setFetchedPlaylists(apiPlaylists);
+            } else {
+                setFetchedPlaylists(rawPlaylists);
+            }
+        };
+        loadPlaylists();
+    }, []);
+
     // Process playlists to ensure we have clean IDs
-    const playlists = rawPlaylists.map(p => ({
+    // Use fetchedPlaylists if available, otherwise static
+    const activePlaylists = (fetchedPlaylists.length > 0 ? fetchedPlaylists : rawPlaylists).map(p => ({
         ...p,
         id: getPlaylistID(p.id)
     }));
 
     // Double the list for seamless scrolling
-    const extendedPlaylists = [...playlists, ...playlists];
+    const extendedPlaylists = [...activePlaylists, ...activePlaylists];
 
     useEffect(() => {
         const container = scrollRef.current;

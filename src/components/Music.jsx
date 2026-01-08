@@ -27,28 +27,28 @@ function Music() {
 
     const rawPlaylists = [
         {
-            title: "Coding Focus",
-            id: "https://open.spotify.com/playlist/37i9dQZF1DX8Uebhn9wzrS" 
+            title: "Sleeping",
+            id: "https://open.spotify.com/playlist/37i9dQZF1DWYILo9WhOOw6?si=6869514e79114271" 
         },
         {
-            title: "Gym Grind",
-            id: "37i9dQZF1DX76Wlfdnj7AP" 
+            title: "Thai Songs",
+            id: "https://open.spotify.com/playlist/663VxhE2ZsIfNEdPPLyebv?si=37dc975b4c284f6d"
         },
         {
-            title: "Late Night Drives",
-            id: "37i9dQZF1DX6QK2C47XvYm" 
+            title: "Sade",
+            id: "https://open.spotify.com/playlist/0yxsmgM2UBnSoHWZ6YEgRv?si=bd9e096796ef406f"
         },
         {
-            title: "Chill Vibes",
-            id: "https://open.spotify.com/playlist/37i9dQZF1DX4WYpdgoIcn6"
+            title: "Drumming",
+            id: "https://open.spotify.com/playlist/3KUqT9vXezSCUFPy1uM6n5?si=e691994f366f4f5f" 
         },
         {
-            title: "Top 50 - Global",
-            id: "37i9dQZEVXbMDoHDwVN2tF"
+            title: "Lock in music",
+            id: "https://open.spotify.com/playlist/6yW6dYt73WjUJMHqHeMqVv?si=89a5d93933d34964" 
         },
         {
-            title: "Rock Classics",
-            id: "37i9dQZF1DWXRqgorJj26U"
+            title: "Jazz",
+            id: "https://open.spotify.com/playlist/1dFrH8T9DjXR6pK80qz7FC?si=4f571c720cd24cd2"
         }
     ];
 

@@ -132,7 +132,7 @@ function Story() {
                                             <span className="text-base">🏆</span>
                                             <div>
                                                 <p className="font-bold">Apple Swift Scholar</p>
-                                                <p className="text-[10px] opacity-75">WWDC24 Winner</p>
+                                                <p className="text-[10px] opacity-75">WWDC22 Winner</p>
                                             </div>
                                         </div>
                                         <div className="flex items-start gap-2 text-slate-300 bg-slate-800/30 p-1.5 rounded border border-slate-700/30">
@@ -307,7 +307,7 @@ function Story() {
                              <p className="text-slate-400 leading-relaxed text-lg">
                                 I believe in giving back—whether as a Data Structures Grader, helping students debug code, or as an
                                 IT Helpdesk Technician resolving connectivity issues for the campus. My work has been recognized globally:
-                                from being an <strong className="text-slate-200">Apple Swift Student Scholar</strong> in 2024 to winning the
+                                from being an <strong className="text-slate-200">Apple Swift Student Scholar</strong> in 2022 to winning the
                                 University of Richmond Capture The Flag (twice!) and taking Silver at the Indonesia Youth Int'l Science Fair.
                                 The map keeps expanding, and I’m still just getting started.
                              </p>

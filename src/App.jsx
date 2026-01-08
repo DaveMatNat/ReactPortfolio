@@ -8,6 +8,7 @@ import Projects from './components/Projects'
 import Footer from './components/Footer'
 import WorkExperience from './components/WorkExperience'
 import Hire from './components/Hire'
+import Music from './components/Music'
 
 function App() {
   // Data & Info
@@ -29,6 +30,7 @@ function App() {
         <WorkExperience />
         <Projects />
         <Hire CONTACTS={CONTACTS}/>
+        <Music />
       </Body>
       <Footer />
     </div>

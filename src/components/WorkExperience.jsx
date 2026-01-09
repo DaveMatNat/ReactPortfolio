@@ -44,7 +44,7 @@ const ExperienceItem = ({ experience, index, isLast }) => {
                             </p>
                         </div>
                         
-                        <div className="flex flex-col md:items-end text-slate-500 text-xs md:text-sm font-mono whitespace-nowrap">
+                        <div className="flex flex-col items-start md:items-end text-slate-500 text-xs md:text-sm font-mono whitespace-nowrap">
                             <span className="bg-slate-100 px-3 py-1 rounded-full border border-slate-200">
                                 {experience.date}
                             </span>
